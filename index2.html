@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>World of News</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header starts  -->
+    <header class="container">
+      <!-- site name & news & blog  -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">World Of News</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+            <div class="navbar-nav d-flex gap-3">
+              <a class="nav-link" href="./index.html">News</a>
+              <a class="nav-link" href="./index2.html">Blog</a>
+              <a class="navbar-brand" href="#">
+                <img
+                  src="./Images/siam-bg1.png"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- site name & news & blog  -->
+
+      <hr />
+
+      
+    </header>
+    <!-- header Ends  -->
+
+    <!-- Main section starts  -->
+    <main class="container">
+      
+      <div class="d-flex justify-content-center">
+        <div class="accordion w-75" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                What are the differences between Flexbox and CSS Grid ?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                Flexbox is designed for one-dimensional layouts, and Grid for
+                two-dimensional layouts. The approach of CSS Grid is the
+                layout first, while the Flexbox approach is primarily the
+                content. The Flexbox layout is best suited to application
+                components and small-scale layouts, while the Grid layout is
+                designed for larger-scale layouts that are not linear in
+                design.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button
+                class="accordion-button  fw-bold collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+                What are the difference between Bootstrap and Tailwind?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo"
+            >
+              <div class="accordion-body">
+                The main difference between Bootstrap and Tailwind is that
+                Bootstrap pre-built components that provide a responsive UI
+                (user interface) kit. On the other hand, Tailwind comes with
+                predesigned widgets that facilitate web developers to design a
+                website from scratch. Both Bootstrap and Tailwind are two of
+                the best front-end CSS framework used worldwide.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button
+                class="accordion-button  fw-bold collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+                What is CSS Box Model?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingThree"
+            >
+              <div class="accordion-body">
+                The CSS box model is a container that contains multiple
+                properties including borders, margin, padding, and the content
+                itself. It is used to create the design and layout of web
+                pages. It can be used as a toolkit for customizing the layout
+                of different elements. The web browser renders every element
+                as a rectangular box according to the CSS box model.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button
+                class="accordion-button  fw-bold collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFour"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFour"
+              >
+                What is a Semantic Tag?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingFour"
+            >
+              <div class="accordion-body">
+                Semantic HTML elements are those that clearly describe their
+                meaning in a human- and machine-readable way. Elements such as
+                < header > , < ooter > and < article > are all considered
+                semantic because they accurately describe the purpose of the
+                element and the type of content that is inside them.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Main section ends  -->
+
+    <!-- Footer starts  -->
+    <footer class="d-flex justify-content-center align-items-center">
+      <span>Copyright 2021 News Portal</span>
+    </footer>
+    <!-- Footer ends   -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
