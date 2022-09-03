@@ -139,3 +139,18 @@ footer {
   background-color: #ffffff;
   padding: 1rem;
 }
+footer span{
+    font-weight: 500;
+    color: #5d5fef;
+}
+#myName{
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+footer .bi{
+    font-size: 30px;
+    margin: 0 2px;
+}
