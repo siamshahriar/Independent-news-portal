@@ -57,7 +57,7 @@ const displayPost = (data, name) => {
     // data.details.slice(0, 100)+'...'
 
     div.innerHTML = `
-    <div class="card mb-3 pt-3 pb-3" >
+    <div id="posted-news" class="card mb-4 pt-3 pb-3" >
     <div class="row g-0 pb-0">
       <div class="col-md-2 ps-3 pe-3 thumb ">
         <img src=${data.thumbnail_url}  alt="...">
@@ -65,26 +65,34 @@ const displayPost = (data, name) => {
       <div class="col-md-10 pt-0 pb-0">
         <div class="card-body">
           <h5 class="card-title">${data.title}</h5>
-          <p class="card-text">${data.details.slice(0, 700) + "..."}</p>
-          <div class="d-flex justify-content-between align-items-end pe-5">
-            <div>
+          <p class="card-text">${data.details.slice(0, 500) + "..."}</p>
+          <div class="d-flex justify-content-between align-items-center pe-5">
+            <div class="d-flex justify-content-center align-items-center">
                 <a class="navbar-brand" href="#">
                     <img
                       src=${data.author.img}
                       alt=""
-                      width="30"
-                      height="30"
+                      width="45"
+                      height="45"
                       style="
-                        border-radius: 20px;
-                        margin-right: 5px;
+                        border-radius: 30px;
+                        margin-right: 10px;
                       "
                     />
                   </a>
-                  <span>${
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span class="author-name">${
                     data.author.name ? data.author.name : "No Name Found"
                   }</span>
+                  <span class="author-published-date">
+                  ${
+                    data.author.published_date ? data.author.published_date.slice(0,10) : "No Date Found"
+                  }
+                  </span>
+                  </div>
+                  
             </div>
-            <div>
+            <div class="d-flex justify-content-center align-items-center gap-2">
                 <i class="bi bi-eye"></i>
                 <span>${
                   data.total_view ? data.total_view : "No data found"
@@ -110,15 +118,16 @@ const displayPost = (data, name) => {
        <div class="modal-dialog modal-dialog-centered">
            <div class="modal-content">
                <div class="modal-header">
-                   <h5 class="modal-title ">News Details</h5>
+                   <h5 class="modal-title w-100 text-center">Full News Details</h5>
                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                </div>
                <div class="modal-body">
-                   <p>Time of publishing: ${data.author.published_date}</p>
-                   <p>Todays Pick: ${data.others_info.is_todays_pack === true ? 'Yes' : 'No'}</p>
-                   <p>Trending: ${data.others_info.is_trending === true ? 'Yes' : 'No'}</p>
-                   <p>Rating: ${data.rating.number}</p>
-                   <p>Badge: ${data.rating.badge}</p>
+                <p>${data.details}</p>
+                   <p class="modal-text">Time of publishing: ${data.author.published_date}</p>
+                   <p class="modal-text">Todays Pick: ${data.others_info.is_todays_pack === true ? 'Yes' : 'No'}</p>
+                   <p class="modal-text">Trending: ${data.others_info.is_trending === true ? 'Yes' : 'No'}</p>
+                   <p class="modal-text">Rating: ${data.rating.number}</p>
+                   <p class="modal-text">Badge: ${data.rating.badge}</p>
                </div>
                <div class="modal-footer">
                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

@@ -1,22 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,700&display=swap");
+
 body {
-    background-color: #F6F6F6;
+  font-family: "Roboto", sans-serif;
+  background-color: #f6f6f6;
 }
-#item-found-counter{
-    margin: 1.5rem 0;
-    padding: 1rem;
-    background-color: #FFFFFF;
-    border-radius: 10px;
+/* first nav  */
+
+#first-nav {
+  font-family: "Playfair Display", serif;
+  color: #5d5fef;
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.thumb img{
-    border-radius: 5px;
-    width: 100%;
-    max-height: 20rem;
-    object-fit: cover;
+#independent {
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  background-color: #5d5fef;
+  color: #ffffff;
 }
 
-footer{
-    background-color: #FFFFFF;
-    padding: 1rem;
-    
+#news-nav {
+  font-size: 16px;
+  font-weight: 700;
+  color: #5d5fef;
+  text-decoration: underline;
+  text-decoration-color: #5d5fef;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
+
+#blog-nav {
+  color: #a3a3a3;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* first nav  */
+
+/* hr  */
+hr {
+  border: 1px solid #cdcdcd;
+}
+/* hr  */
+
+/* catagory section  */
+
+#catagories a {
+  color: #858585;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+#catagories a:hover {
+  background: #eeefff;
+  color: #5d5fef;
+}
+
+/* catagory section  */
+
+#item-found-counter {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+/* posted news section  */
+#posted-news {
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #121221;
+}
+.card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #949494;
+}
+.author-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2b2c34;
+}
+.author-published-date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  /* Blacks/Mid emphasis */
+
+  color: #718797;
+}
+
+.bi-eye{
+    font-size: 24px;
+}
+.bi-arrow-right{
+    font-size: 24px;
+    font-weight: 700;
+    color:#5d5fef;
+}
+
+/* Modal starts */
+.modal-title{
+    font-weight: 700;
+    color: #5d5fef;
+}
+.modal-text{
+    font-weight: 600;
+    color: #121221;
+}
+/* Modal Ends */
+
+/* posted news section Ends */
+
+.thumb img {
+  border-radius: 5px;
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 1rem;
 }

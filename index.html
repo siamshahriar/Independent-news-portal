@@ -15,11 +15,11 @@
   </head>
   <body>
     <!-- header starts  -->
-    <header class="container">
+    <header class="container mt-3">
       <!-- site name & news & blog  -->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">World Of News</a>
+          <a class="navbar-brand" id="first-nav" href="#"><span id="independent">Independent</span> News</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -34,8 +34,8 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
             <div class="navbar-nav d-flex gap-3">
-              <a class="nav-link" href="./index.html">News</a>
-              <a class="nav-link" href="./index2.html">Blog</a>
+              <a class="nav-link" id="news-nav" href="./index.html">News</a>
+              <a class="nav-link" id="blog-nav" href="./index2.html">Blog</a>
               <a class="navbar-brand" href="#">
                 <img
                   src="./Images/siam-bg1.png"
@@ -133,8 +133,19 @@
     <!-- Main section ends  -->
 
     <!-- Footer starts  -->
-    <footer class="d-flex justify-content-center align-items-center">
-      <span>Copyright 2021 News Portal</span>
+    <footer>
+        <div class="d-flex justify-content-center flex-column align-items-center">
+            <span>Copyright 2021 News Portal</span> 
+      <a href="https://github.com/siamshahriar">Md. Shahriar Rahman</a>
+      <div>
+        <a href=""><i class="bi bi-github"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-telegram"></i></a>
+        <a href=""><i class="bi bi-twitter"></i></a>
+      </div>
+        </div>
+      
+
     </footer>
     <!-- Footer ends   -->
 
