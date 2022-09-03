@@ -1,4 +1,7 @@
 const homePageLoad = () => {
+    const chorki = document.getElementById('chorki');
+    chorki.classList.remove('d-none');
+
   // let url = 'https://openapi.programming-hero.com/api/news/category/08'
   fetch("https://openapi.programming-hero.com/api/news/category/08")
     .then((response) => response.json())
