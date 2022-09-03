@@ -10,7 +10,10 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -52,14 +55,11 @@
       <!-- site name & news & blog  -->
 
       <hr />
-
-      
     </header>
     <!-- header Ends  -->
 
     <!-- Main section starts  -->
     <main class="container">
-      
       <div class="d-flex justify-content-center">
         <div class="accordion w-75" id="accordionPanelsStayOpenExample">
           <div class="accordion-item">
@@ -72,7 +72,7 @@
                 aria-expanded="true"
                 aria-controls="panelsStayOpen-collapseOne"
               >
-                What are the differences between Flexbox and CSS Grid ?
+                What are the differences between var , let and const ?
               </button>
             </h2>
             <div
@@ -81,27 +81,50 @@
               aria-labelledby="panelsStayOpen-headingOne"
             >
               <div class="accordion-body">
-                Flexbox is designed for one-dimensional layouts, and Grid for
-                two-dimensional layouts. The approach of CSS Grid is the
-                layout first, while the Flexbox approach is primarily the
-                content. The Flexbox layout is best suited to application
-                components and small-scale layouts, while the Grid layout is
-                designed for larger-scale layouts that are not linear in
-                design.
+                JavaScript has three variable declaration statements: var, let
+                and const. The latter two were added in ES6, whereas var existed
+                since previous versions. One of the first things to notice is
+                that const defines constants (i.e. values that will not be
+                reassigned), whereas var and let define variables. Yet, var
+                behaves differently from both let and const in various other
+                ways.
+                <br />
+                <br />
+                <p>
+                  Variables declared with var are function scoped, in contrast
+                  to variables declared with let or const which are block
+                  scoped.
+
+                  <br />
+                  <br />
+                  While variables declared with var are hoisted to the enclosing
+                  scope, variables declared with let or const are not
+                  initialized until their definition is evaluated.
+                  <br />
+                  <br />
+                  At the top level, variables declared with var, unlike ones
+                  declared with let or const, create a property on the global
+                  object.
+                  <br />
+                  <br />
+                  In strict mode, variables declared with var can be re-declared
+                  in the same scope, whereas this is not allowed for variables
+                  declared with let or const.
+                </p>
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
               <button
-                class="accordion-button  fw-bold collapsed"
+                class="accordion-button fw-bold collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseTwo"
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseTwo"
               >
-                What are the difference between Bootstrap and Tailwind?
+                What are the difference between arrow and regular function?
               </button>
             </h2>
             <div
@@ -110,26 +133,30 @@
               aria-labelledby="panelsStayOpen-headingTwo"
             >
               <div class="accordion-body">
-                The main difference between Bootstrap and Tailwind is that
-                Bootstrap pre-built components that provide a responsive UI
-                (user interface) kit. On the other hand, Tailwind comes with
-                predesigned widgets that facilitate web developers to design a
-                website from scratch. Both Bootstrap and Tailwind are two of
-                the best front-end CSS framework used worldwide.
+                JavaScript's arrow functions might seem the same as regular
+                functions on the surface, but they have some very important
+                differences:
+                <ul>
+                  <li>Syntactical differences</li>
+                  <li>this.value (execution context)</li>
+                  <li>Usage as methods</li>
+                  <li>Usage as constructors</li>
+                  <li>arguments binding</li>
+                </ul>
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingThree">
               <button
-                class="accordion-button  fw-bold collapsed"
+                class="accordion-button fw-bold collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseThree"
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseThree"
               >
-                What is CSS Box Model?
+                Why and when to use forEach, map, filter, and find in JavaScript
               </button>
             </h2>
             <div
@@ -138,26 +165,38 @@
               aria-labelledby="panelsStayOpen-headingThree"
             >
               <div class="accordion-body">
-                The CSS box model is a container that contains multiple
-                properties including borders, margin, padding, and the content
-                itself. It is used to create the design and layout of web
-                pages. It can be used as a toolkit for customizing the layout
-                of different elements. The web browser renders every element
-                as a rectangular box according to the CSS box model.
+                When to use forEach?<br />
+                => .forEach() is great you need to execute a function for each
+                individual element in an array. Good practice is that you should
+                use .forEach() when you can’t use other array methods to
+                accomplish your goal. I know this may sound vague, but
+                .forEach() is a generic tool… only use it when you can’t use a
+                more specialized tool.
+                <br /><br />
+                When to use map?<br />
+                => .map() when you want to transform elements in an array.
+                <br /><br />
+                When to use filter?<br />
+                => .filter() when you want to select a subset of multiple
+                elements from an array.<br /><br />
+
+                When to use find?<br />
+                => .find() When you want to select a single element from an
+                array.
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingFour">
               <button
-                class="accordion-button  fw-bold collapsed"
+                class="accordion-button fw-bold collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseFour"
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseFour"
               >
-                What is a Semantic Tag?
+                Why template string is used in javascript ?
               </button>
             </h2>
             <div
@@ -166,11 +205,43 @@
               aria-labelledby="panelsStayOpen-headingFour"
             >
               <div class="accordion-body">
-                Semantic HTML elements are those that clearly describe their
-                meaning in a human- and machine-readable way. Elements such as
-                < header > , < ooter > and < article > are all considered
-                semantic because they accurately describe the purpose of the
-                element and the type of content that is inside them.
+                Template Literal in ES6 provides new features to create a string
+                that gives more control over dynamic strings. Traditionally,
+                String is created using single quotes (‘) or double quotes (“)
+                quotes. Template literal is created using the backtick (`)
+                character.
+                <br />
+                <br />Syntax: var s=`some string`;
+                <br />
+                <br />
+
+                Multiline Strings: In-order to create a multiline string an
+                escape sequence \n was used to give new line character. However,
+                Template Literals there is no need to add \n string ends only
+                when it gets backtick (`) character.
+                <br />
+                <br />
+
+                Expressions: To dynamically add values into new Template
+                Literals expressions are used. The ${} syntax allows an
+                expression in it that produces the value. This value can be a
+                string stored in a variable or a computation operation.
+                <br />
+                <br />
+                Tagged Templates: One of the features of Template Literals is
+                its ability to create Tagged Template Literals. Tagged Literal
+                is written like a function definition, but the difference is
+                when this literal is called. There is no parenthesis() to a
+                literal call. An array of Strings are passed as a parameter to a
+                literal.
+                <br />
+                <br />
+
+                Raw String: Raw method of template literal allows access of raw
+                strings as they were entered, without processing escape
+                sequences. In addition, the String.raw() method exists to create
+                raw strings just like the default template function, and string
+                concatenation would create.
               </div>
             </div>
           </div>
@@ -180,7 +251,7 @@
     <!-- Main section ends  -->
 
     <!-- Footer starts  -->
-    <footer class="d-flex justify-content-center align-items-center">
+    <footer class="d-flex justify-content-center align-items-center mt-5">
       <span>Copyright 2021 News Portal</span>
     </footer>
     <!-- Footer ends   -->
