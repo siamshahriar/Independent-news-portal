@@ -1,0 +1,9 @@
+body {
+    background-color: #F6F6F6;
+}
+#item-found-counter{
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
