@@ -127,10 +127,20 @@ const displayPost = (data, name) => {
   let numberOfItems = document.getElementById("item-found-counter");
   numberOfItems.innerHTML = "";
   let span = document.createElement("span");
-  span.innerHTML = `
+
+  if ( data.length > 0 ){
+    span.innerHTML = `
     <span>${data.length} items found for category ${name}</span>
   
   `;
+  }
+  else{
+    span.innerHTML = `
+    <span>No item found for category ${name}</span>
+  
+  `;
+  }
+  
   numberOfItems.appendChild(span);
   numberOfItems.classList.remove("d-none");
 };
