@@ -32,6 +32,8 @@ const displayCatagory = (data) => {
 };
 
 const loadNewsPost = (data, data2, name) => {
+    const chorki = document.getElementById('chorki');
+    chorki.classList.remove('d-none');
   const id = document.getElementById(data);
   let url = `https://openapi.programming-hero.com/api/news/category/${data2}`;
   fetch(url)
@@ -71,6 +73,7 @@ const displayPost = (data, name) => {
                       height="30"
                       style="
                         border-radius: 20px;
+                        margin-right: 5px;
                       "
                     />
                   </a>
@@ -143,4 +146,7 @@ const displayPost = (data, name) => {
   
   numberOfItems.appendChild(span);
   numberOfItems.classList.remove("d-none");
+
+  const chorki = document.getElementById('chorki');
+    chorki.classList.add('d-none');
 };
