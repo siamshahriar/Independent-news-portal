@@ -50,11 +50,22 @@ const displayPost = (data, name) => {
   let parentDiv = document.getElementById("parentDiv");
   parentDiv.innerHTML = "";
 
+  // sorting 
+  
+  // sort by value desceding
+  data = data.sort(function (a, b) {
+    return b.total_view - a.total_view;
+  });
+
+  console.log(data);
+
+  // sorting 
+
+
   data.forEach((data) => {
     let div = document.createElement("div");
-    console.log(data);
 
-    // data.details.slice(0, 100)+'...'
+    
 
     div.innerHTML = `
     <div id="posted-news" class="card mb-4 pt-3 pb-3" >
